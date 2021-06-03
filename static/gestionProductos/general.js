@@ -45,7 +45,7 @@ function load_categories(){
            // Añadiendo estilos CSS
            item.className = 'dropdown-item';
            // Agregando datos del API
-           item.href = `./category.html?c=${element['nombre']}`;
+           item.href = `./category?c=${element['nombre']}`;
            // Ordenar título
            let item_title = element['nombre'];
            item_title = item_title.charAt(0).toUpperCase() + item_title.slice(1);
