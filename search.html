@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="static/gestionProductos/layouts.js" defer></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <link href="static/gestionProductos/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="nav-container">
+
+        </div>
+        
+          <br/>
+          <div class="row">
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <h3>Filtros</h3>
+                    <br/>
+                    <br/>
+                    <div class="form-group">
+                        <h5>Precio</h5>
+                        <hr/>
+                        <ul class="list-group">
+                            <li id="low-price-filter" class="list-group-item d-flex justify-content-between align-items-center"><a style="text-decoration: none;color: black;" href="#"></a></li>
+                            <li id="high-price-filter" class="list-group-item d-flex justify-content-between align-items-center"><a style="text-decoration: none;color: black;" href="#"></a></li>
+                        </ul>
+                        <br/>
+                        <div class="form-row">
+                            <div class="col-md-5">
+                                <input id="min-filter" type="number" class="form-control" placeholder="Mínimo">
+                            </div>
+                            <div class="col-md-5">
+                                <input id="max-filter" type="number" class="form-control" placeholder="Máximo">
+                            </div>
+                            <div class="col-md-2">
+                                <button id="filter-btn" style="width: 100%;" type="button" class="btn btn-light custom-buttom"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="col-md-9">
+                <h3>Resultados</h3>
+                <br/>
+                <h4 id="title-search"></h4>
+                <hr/>
+                
+                <br/>
+                <div id="filter-container" class="col-md-12">
+                    <div style="display: flex; justify-content: flex-end" class="dropdown">
+                        <button class="btn btn-light custom-buttom dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-filter"></i> Ordenar
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" id="less-price">Menor Precio</a>
+                          <a class="dropdown-item" id="more-price">Mayor Precio</a>
+                        </div>
+                      </div>
+                </div>
+                <br/>
+                <div id="search-container" class="col-md-12 shadow p-3 mb-5 bg-light rounded-lg border-info">
+                    <!-- <div class="col-md-12 containers">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#"><img style="width: 200px;height: 200px;display: block; margin: auto;" src="https://static01.nyt.com/images/2021/04/01/dining/01next1/merlin_185496183_777290b3-7f9e-42b9-acee-0b1c3a1b3d4d-superJumbo.jpg"></a>
+                            </div>
+                            <div  class="col-md-8">
+                                <h3 style="background-color: #e07000;padding-left: 20px; width: 100%;"><a style="color: white;text-decoration: none;" href="#">Pisco</a></h3>
+                                <br/>
+                                <div class="col-md-12">
+                                    <h3 style="display: inline;">S/.12</h3>
+                                        <p style="display:inline;text-decoration: line-through;">$.15</p>
+                                        <br/>
+                                        <h4 style="color: #37b859;">5% OFF</h4>
+                                </div>
+                                
+                                
+                            </div>
+                        </div> 
+                    </div> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-2" style="margin-left: auto;margin-right: auto;">
+                            <nav style="padding-left: 40%;" aria-label="pagination">
+                                <ul class="pagination">
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+            </div>
+          </div>
+          <div id="footer-container">
+
+          </div>
+          
+        <div class="scripts">
+            <script src="static/gestionProductos/general.js"></script>
+            <script src="static/gestionProductos/search.js"></script>
+        </div>
+    </body>
+
+</html>
